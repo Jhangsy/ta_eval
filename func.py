@@ -6,7 +6,7 @@ def split_name(character_name,kungfu_name):
     character = open(character_dict).read()
     kungfu = open(kungfu_dict).read()
 
-    with open("name_dic","wb") as outfile:
+    with open("name_dic.txt","wb") as outfile:
         outfile.write(kungfu)
         outfile.write(character.replace("、","\n").replace("）","").replace("（","\n")
         .replace("：","\n"))
